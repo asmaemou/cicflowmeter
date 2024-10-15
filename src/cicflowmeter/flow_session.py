@@ -125,6 +125,9 @@ class FlowSession(DefaultSession):
         if not self.url_model:
             print("Garbage Collection Finished. Flows = {}".format(len(self.flows)))
 
+        if self.url_model:
+            
+
 
 def generate_session_class(output_mode, output_file, url_model):
     return type(
